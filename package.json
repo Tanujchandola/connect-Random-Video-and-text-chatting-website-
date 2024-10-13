@@ -6,6 +6,6 @@
     "start:text": "npm run start --prefix text",
     "start:client": "npm run dev --prefix videochat/client",
     "start:server": "npm start --prefix videochat/server",
-    "start:all": "npm-run-all --parallel start:text start:client start:server"
+    "start:all": "npm-run-all --parallel  start:client start:server"
   }
 }
