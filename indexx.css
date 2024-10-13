@@ -1,0 +1,478 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS for Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: slideInDown 0.5s ease-in-out;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul li {
+    margin-left: 20px;
+}
+
+ul li:first-child {
+    margin-left: 0;
+}
+
+ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+ul li a:hover {
+    background-color: #f8f9fa;
+    color: #8a2828;
+}
+
+/* CSS for Header, Main, and Footer */
+header {
+    background-color: #20262c;
+    padding: 100px 0;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 10%;
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 24px;
+    color: #666;
+}
+
+main {
+    background-color: #fff;
+    padding: 50px 0;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Styles for Chat Options */
+.chat-options {
+    text-align: center;
+    margin-top: 4%;
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+.chat-option {
+    font-size: 24px;
+    padding: 20px 40px;
+    margin: 20px;
+    margin-bottom: 14%;
+    background-color: #202030;
+    color: #beb3b3;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.chat-option:hover {
+    background-color: #999;
+    color: #fff;
+}
+
+/* CSS for About Us Section */
+.about-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-content h3 {
+    font-size: 28px;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.about-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.about-content ul li {
+    font-size: 20px;
+    color: #666;
+}
+
+.about-content h3:first-child {
+    margin-top: 0;
+}
+
+/* CSS for How to Use Section */
+.how-to-use-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.how-to-use-content {
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+.how-to-use-content h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.how-to-use-content p {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.how-to-use-content ol {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.how-to-use-content ol li {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* CSS for Header, Main, and Footer */
+header, main, footer {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Fade in effect */
+header.fade-in, main.fade-in, footer.fade-in {
+    opacity: 1;
+}
+
+section {
+    display: block;
+}
+
+/* CSS for Video Container */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    ul li a {
+        width: 100%;
+        text-align: center;
+    }
+
+    header {
+        padding: 50px 0;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .chat-option {
+        font-size: 20px;
+        padding: 15px 30px;
+    }
+
+    .about-content, .how-to-use-content {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 10px;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+    ul li a {
+        padding: 8px 10px;
+    }
+
+    header {
+        padding: 40px 0;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .chat-option {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    .about-content, .how-to-use-content {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 5px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    ul li a {
+        padding: 5px 8px;
+    }
+
+    header {
+        padding: 20px 0;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .chat-option {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    .about-content, .how-to-use-content {
+        padding: 0 10px;
+    }
+}
+
+
+
+.nav-select {
+    display: none;
+    width: auto;
+    font-size: 16px;
+    margin-top: 10px;
+    position: absolute;
+    top: 10px;
+    right: 1px;
+}
+
+@media (max-width: 960px) {
+    nav ul {
+        display: none;
+    }
+    .nav-select {
+        display: inline-block;
+    }
+}
+
+
+select {
+    border: none;
+    border-radius: 500px;
+    background-color: #333 !important; /* Same as nav background color */
+    color: #fff; /* White text color */
+}
+
+.nav-select select {
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Safari, Chrome, Opera */
+    -webkit-appearance: none;
+    appearance: none; /* Standard property */
+}
+
+.nav-select select {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.nav-select select:hover {
+    background-color: #444;
+    border-color: #bbb;
+}
+
+.nav-select select:focus {
+    outline: none;
+    border-color: #888;
+    background-color: #444;
+}
+
+.nav-select select option {
+    background-color: #333;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .nav-select {
+        font-size: 14px;
+        top: 5px;
+        right: 10px;
+    }
+
+    .nav-select select {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-select {
+        font-size: 12px;
+        top: 3px;
+        right: 3px;
+    }
+
+    .nav-select select {
+        padding: 6px 8px;
+        font-size: 12px;
+    }
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

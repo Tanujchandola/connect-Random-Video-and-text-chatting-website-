@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "start:all": "concurrently \"npm run start --prefix text\" \"npm run dev --prefix videochat/client\" \"npm start --prefix videochat/server\""
+  }
+}

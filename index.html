@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Homepage</title>
+    <link rel="stylesheet" href="indexx.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="logo">
+            <img src="img/logo.png" alt="Connect Logo">
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#how-to-use">How to Use</a></li>  
+        </ul>
+        <div class="nav-select" value="bold ≡&#8801">
+            <select onchange="location = this.value;">
+                <option value="none" selected disabled hidden> 
+                 &#8801
+                </option>
+                <option value="#home">Home</option>
+                <option value="#about">About Us</option>
+                <option value="#how-to-use">How to Use</option>
+            </select>
+        </div>
+    </nav>
+  
+     
+    
+    <header id="home">
+        <div  class="header-content">
+            <h1>Welcome to Connect</h1>
+            <p>A platform for seamless communication</p>
+        </div>
+    </header>
+    <main >
+        <section class="chat-options">
+            <h2>Select Chat Type</h2>
+            <button id="startchat" class="chat-option" onclick="window.location.href='http://localhost:5173/video.html'"><i class="fcp fa-video-camera" ></i>Start Video Chat</button>
+            <button id="startvideo" class="chat-option" onclick="window.location.href='http://localhost:3000'"><i class="fcp fa-comments-o"></i>Start Text Chat</button>
+        
+        </section>
+    </div>
+        <section id="about" class="about-section">
+            <br><br><br><br>
+            <div class="about-content">
+                <h2>About Us</h2>
+                <p>
+                    At Connect, we believe in the power of connection. Our mission is to create innovative solutions that bring people together, no matter where they are in the world. We understand the importance of seamless communication, and that's why we're dedicated to developing cutting-edge technologies that make it easier for individuals and businesses to connect, collaborate, and thrive.
+                </p>
+                <h3>Our Story</h3>
+                <p>
+                    Connect was founded in 2024 by a team of passionate individuals who shared a vision for a more connected world. Fueled by our collective desire to break down barriers and foster meaningful connections, we embarked on a journey to develop intuitive and reliable communication tools that transcend geographical boundaries.
+                </p>
+                <h3>What We Do</h3>
+                <p>
+                    At Connect, we specialize in creating real-time communication platforms that empower users to interact effortlessly. From video conferencing and instant messaging to collaborative document editing, our suite of products is designed to enhance productivity and facilitate seamless collaboration. We are committed to staying at the forefront of technology to provide our users with the best possible communication experience.
+                </p>
+                
+                <h3>Get Connected</h3>
+                <p>
+                    Join us on our journey to build a more connected world. Whether you're an individual looking to stay connected with loved ones or a business seeking to improve collaboration among teams, Connect has the solutions you need. Together, let's make the world a smaller, more connected place.
+                </p>
+            </div>
+        </section>
+        <section id="how-to-use" class="how-to-use-section">
+            <br><br><br><br>
+           
+            <div class="how-to-use-content">
+                <h2>How to Use</h2>
+                <p>Using Connect is simple and straightforward. Follow these steps to get started:</p>
+                <div class="video-container">
+                   
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div><br><br>
+                <ol>
+                    <li>Access the Connect website by opening your web browser and navigating to the provided URL.</li>
+                    <li>Explore the navigation bar at the top of the page to learn more about the different sections of the website, including Home, About Us, and How to Use.</li>
+                    <li>On the Home page, you'll find a section titled "Select Chat Type." Choose between starting a Video Chat or a Text Chat by clicking on the corresponding button.</li>
+                    <li>If you choose to start a Video Chat, you'll be directed to a video chat room where you can interact with other users via video conferencing. Make sure to allow access to your camera and microphone if prompted.</li>
+                    <li>If you prefer a Text Chat, clicking on the Text Chat button will lead you to a chat room where you can communicate with other users via text messages. Simply type your message in the chat input box and press Enter to send.</li>
+                </ol>
+                <p>That's it! You're now ready to start connecting with others on Connect. Enjoy your experience!</p>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Connect</p>
+    </footer>
+    <script>// Add fade-in class to header, main, and footer after page load
+        window.addEventListener('load', function() {
+            document.querySelector('header').classList.add('fade-in');
+            document.querySelector('main').classList.add('fade-in');
+            document.querySelector('footer').classList.add('fade-in');
+        });
+        </script>
+</body>
+</html>
